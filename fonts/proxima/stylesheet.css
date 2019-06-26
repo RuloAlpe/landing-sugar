@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'ProximaNova-Light';
+    src: url('subset-ProximaNova-Light.woff2') format('woff2'),
+        url('subset-ProximaNova-Light.woff') format('woff'),
+        url('subset-ProximaNova-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ProximaNova-Extrabld';
+    src: url('subset-ProximaNova-Extrabld.woff2') format('woff2'),
+        url('subset-ProximaNova-Extrabld.woff') format('woff'),
+        url('subset-ProximaNova-Extrabld.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+/* 
+@font-face {
+    font-family: 'ProximaNova-LightItalic';
+    src: url('subset-ProximaNova-LightIt.woff2') format('woff2'),
+        url('subset-ProximaNova-LightIt.woff') format('woff'),
+        url('subset-ProximaNova-LightIt.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'ProximaNova-Regular';
+    src: url('subset-ProximaNova-Regular.woff2') format('woff2'),
+        url('subset-ProximaNova-Regular.woff') format('woff'),
+        url('subset-ProximaNova-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ProximaNova-BoldItalic';
+    src: url('subset-ProximaNova-BoldIt.woff2') format('woff2'),
+        url('subset-ProximaNova-BoldIt.woff') format('woff'),
+        url('subset-ProximaNova-BoldIt.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'ProximaNova-Bold';
+    src: url('subset-ProximaNova-Bold.woff2') format('woff2'),
+        url('subset-ProximaNova-Bold.woff') format('woff'),
+        url('subset-ProximaNova-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+} */
+
+
+/* 
+@font-face {
+    font-family: 'ProximaNova-RegularItalic';
+    src: url('subset-ProximaNova-RegularIt.woff2') format('woff2'),
+        url('subset-ProximaNova-RegularIt.woff') format('woff'),
+        url('subset-ProximaNova-RegularIt.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+} */
