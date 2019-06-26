@@ -1,0 +1,579 @@
+/* General styles
+----------------------------------------------------------------------------- */
+
+address{font-style:normal; font-weight:normal;}
+
+
+.font-xs{font-size:.8rem;}
+.font-x1{font-size:1.2rem;}
+.font-x2{font-size:1.8rem;}
+.font-x3{font-size:2.8rem;}
+.font-x4{font-size:3.8rem;}
+.font-x5{font-size:4.8rem;}
+
+/* Spacing, margin and padding
+----------------------------------------------------------------------------- */
+/* Margin bottom */
+.btmspace-10{margin-bottom:10px;}
+.btmspace-15{margin-bottom:15px;}
+.btmspace-30{margin-bottom:30px;}
+.btmspace-50{margin-bottom:50px;}
+.btmspace-80{margin-bottom:80px;}
+
+/* Pushright */
+.pushright li{margin-right:20px;}
+.pushright li:last-child{margin-right:0;}
+
+/* Perimeter padding */
+.inspace-5{padding:5px;}
+.inspace-10{padding:10px;}
+.inspace-15{padding:15px;}
+.inspace-30{padding:30px;}
+.inspace-50{padding:50px;}
+.inspace-80{padding:80px;}
+
+/*Modificar el nombre de estos*/
+.p-0 {padding: 0 !important;}
+.py-4 {padding-top: 6rem !important; padding-bottom: 6rem !important;}
+.py-5 {padding-top: 5rem !important; padding-bottom: 5rem !important;}
+
+.nospace {margin:0; padding:0; list-style:none;}
+
+/*Elementos de bloque */
+.block{display:block;}
+/*Elementos de línea */
+.inline {display:inline-block;}
+
+/* Colours
+----------------------------------------------------------------------------- */
+.text-primary {color:#56bee1;}
+
+.bg-primary {background-color:#ffffff; color:#000000;}
+.bg-secondary {background-color:#b4b4b5; color:#000000;}
+.bg-tertiary {background-color:#e10213; color:#ffffff;}
+
+/*Header*/
+.header {
+	padding:0;
+	padding-top: 7rem !important;
+	background-color:#2e2d2c;
+}
+
+.header img{width: 100%;}
+
+.header-content h4{
+	font-size:1.2em;
+	letter-spacing:.3em;
+	text-transform:uppercase;
+    font-weight: 800;
+    margin-bottom: -20px;
+}
+
+.header-content h1{
+	font-size:3.3em;
+	letter-spacing: .2em;
+  margin-bottom: -1px;
+}
+
+.header-content .block{
+	font-size:.9em;
+	letter-spacing:1em;
+	text-transform: uppercase;
+	padding:5px;
+	border:1px solid #ffffff;
+	display: inline-block;
+}
+
+/*quees*/
+.quees{padding: 100px 30px 30px 30px;}
+.quees h3{
+    font-family: 'ProximaNova-Light';
+    font-weight: 300;
+    font-style: normal;
+    font-size:1.5em;
+    line-height:1.5em;
+}
+
+.beneficios{padding: 50px 50px 30px 50px;}
+.beneficios h3{
+    font-family: 'ProximaNova-Light';
+    font-weight: 300;
+    font-style: normal;
+    font-size:1.5em;
+    line-height:1.5em;
+}
+
+/*Bloque*/
+.bloque{
+	padding:40px;
+	-webkit-border-radius: 20px 20px 20px 20px;
+	-moz-border-radius: 20px 20px 20px 20px;
+	-o-border-radius: 20px 20px 20px 20px;
+	-ms-border-radius: 20px 20px 20px 20px;
+	border-radius: 20px 20px 20px 20px;
+	height: 420px;
+	margin-bottom:20px;
+
+  -moz-transform: skewY(5deg);
+  -webkit-transform: skewY(5deg);
+  -o-transform: skewY(5deg);
+  -ms-transform: skewY(5deg);
+  transform: skewY(5deg);
+  }
+
+.bloque .bloque-content{
+-moz-transform: skewY(-5deg);
+-webkit-transform: skewY(-5deg);
+-o-transform: skewY(-5deg);
+-ms-transform: skewY(-5deg);
+transform: skewY(-5deg);
+display:inline-block;
+}
+
+.bloque h3{
+	text-align: center;
+	font-family: 'ProximaNova-Light';
+    font-weight: 300;
+}
+
+/*Reconocimiento*/
+.reconocimiento h3{
+    font-family: 'ProximaNova-Light';
+    font-weight: 300;
+    font-style: normal;
+    font-size:1.5em;
+}
+
+.iconReconocimiento{
+  width:1em; 
+} 
+
+.l1 {
+  transform: translateX(1.4em);
+}
+.a2 {
+  transform: translateX(-1.4em);
+}
+.lineaDiv {
+  padding: 2em 0;
+}
+
+.border-right{
+	border-right: 1px solid #ffffff;
+}
+.noOverflow {
+  overflow: hidden;
+}
+.row {margin: 0 !important;}
+
+.img-full{
+	width:100%;
+}
+
+/*Soluciones*/
+
+.soluciones h1{
+    font-family: 'ProximaNova-Extrabld';
+    font-weight: 300;
+    font-style: normal;
+    font-size:3.5em;
+}
+
+.soluciones h3{
+    font-family: 'ProximaNova-Light';
+    font-weight: 300;
+    font-style: normal;
+    font-size:1.5em;
+    margin-top: 45px;
+}
+
+/*Navbar affix*/
+.navbar{
+    border-radius: 0;
+}
+.navbar.affix{
+    top: 70px; 
+    z-index: 50;
+    width: 100%;
+}
+.navbar-custom {
+  background-color: #3c3c3b;
+  border-color:none;
+}
+.navbar-custom .navbar-brand {
+  color: #ffffff;
+  margin-top: 12px;
+}
+.navbar-custom .glyphicon {
+  color: #ffffff;
+  margin-top: 12px;
+}
+/*
+.navbar-custom .navbar-nav {
+  width: 100%;
+  text-align: center;
+}
+.navbar-custom .navbar-nav > li {
+  float: none;
+  display: inline-block;
+}
+*/
+
+.navbar-custom .navbar-nav > li > a {
+  color: #ffffff;
+}
+.navbar-custom .navbar-nav > li > a:hover,
+.navbar-custom .navbar-nav > li > a:focus {
+  color:#56bee0;
+  background-color:#3c3c3b;
+}
+.navbar-custom .navbar-nav > .active > a,
+.navbar-custom .navbar-nav > .active > a:hover,
+.navbar-custom .navbar-nav > .active > a:focus {
+  color: #56bee0;
+  background-color:#3c3c3b;
+}
+.navbar-custom .navbar-toggle {
+  border-color:none;
+}
+.navbar-custom .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+
+
+/* contacto-sugar */
+.contacto-sugar {
+    min-height: 100%;
+    min-height: 100vh;
+    padding-bottom: 3em;
+    background: url(../img/haz-contacto.jpg) no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.contacto-sugar h1{
+  font-family: 'ProximaNova-Extrabld';
+  font-weight: 800;
+  font-style: normal;
+  font-size: 5.5em;
+  text-align: center;
+}
+
+/* Checkboxes styles
+----------------------------------------------------------------------------- */
+.check {
+  margin-top: 0.6em;
+  margin-bottom: 0.6em;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"]+label {
+  display: inline-block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 20px;
+  font-family: 'ProximaNova-Light';
+  font: 14px/20px;
+  font-weight: 300;
+  color: #fff;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+/* input[type="checkbox"] + label:last-child { margin-bottom: 0; } */
+
+input[type="checkbox"]+label:before {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #000000;
+  position: absolute;
+  background-color: #ffffff;
+  left: 0;
+  top: 0;
+  opacity: .6;
+  -webkit-transition: all .12s, border-color .08s;
+  transition: all .12s, border-color .08s;
+}
+
+input[type="checkbox"]:checked+label:before {
+  width: 10px;
+  top: -5px;
+  left: 5px;
+  border-radius: 0;
+  background-color: rgba(0, 0, 0, 0);
+  opacity: 1;
+  border: 1px solid #C11E3E;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* RO */
+.maxImg {
+  max-width: 1200px;
+}
+
+/* Tablet */
+@media all and (min-width:980px) {
+  .navbar-brand {display: none;}
+  .navbar-custom .navbar-nav {
+  width: 100%;
+  text-align: center;
+}
+.navbar-custom .navbar-nav > li {
+  float: none;
+  display: inline-block;
+}
+}
+
+/* Tablet */
+@media all and (min-width:1025px) {
+  /*Header*/
+  .header {padding-top: 7rem !important;}
+  .header-content{padding:4em;}
+
+  .header-content h4{
+    font-size:1.2em;
+    letter-spacing:.3em;
+    font-weight: 800;
+    margin-bottom:-20px;
+  }
+
+  .header-content h1{
+    font-size:2.6em;
+    letter-spacing: .2em;
+  }
+
+  .header-content .block{
+    font-size:0.8em;
+    letter-spacing:1em;
+    padding:5px 5px 5px 20px;
+  }
+}
+
+
+/* Desktop */
+@media (min-width: 767px) and (max-width: 1024px) {
+.quees{padding:50px 30px 30px 30px;}
+.beneficios{padding:0px 50px 0px 50px;}
+	.bloque{
+	padding:10px 25px 0px;
+	height:380px;
+	margin-bottom:20px;}
+
+  /*Header*/
+  .header {padding-top: 7rem !important;}
+  .header-content{padding:100px;}
+
+  .header-content h4{
+    font-size:1.2em;
+    letter-spacing:.3em;
+    font-weight: 800;
+    margin-bottom:-20px;
+  }
+
+  .header-content h1{
+    font-size:2.6em;
+    letter-spacing: .2em;
+  }
+
+  .header-content .block{
+    font-size:.8em;
+    letter-spacing:1em;
+    padding:5px 5px 5px 20px;
+  }
+}
+
+/* Tablet */
+@media (min-width: 767px) and (max-width: 979px) {
+	.quees{padding: 40px 30px 0px 30px;}
+	.beneficios{padding: 0px 50px 0px 50px;}
+	.bloque{
+	padding:10px 25px 0px;
+	height: 280px;
+	margin-bottom:20px;}
+	.bloque h3{font-size: 18px;}
+	.bloque img{width: 30px;}
+
+   /*Header*/
+  .header {padding-top: 7rem !important;}
+  .header-content{padding:50px;}
+
+  .header-content h4{
+    font-size:1.2em;
+    letter-spacing:.3em;
+    font-weight: 800;
+    margin-bottom:-20px;
+  }
+ 
+  .header-content h1{
+    font-size:2.8em;
+    letter-spacing: .2em;
+    margin-bottom: 2px;
+  }
+
+  .header-content .block{
+    font-size:0.9em;
+    letter-spacing:1em;
+    padding:5px 5px 5px 20px;
+  } 
+  .contacto-sugar {
+      height: 100%;
+      height: 100vh;
+      background: url(../img/haz-contacto.jpg) no-repeat left bottom !important;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+  }
+}
+
+.alinearMobile {
+  text-align: right;
+}
+
+@media (max-width: 480px) {
+  .soluciones h1{
+    font-family: 'ProximaNova-Extrabld';
+    font-weight: 300;
+    font-style: normal;
+    font-size:2em;
+  }
+  .quienesSomosTitle h1 {
+    line-height: 1em;
+    font-size: 1.8em !important;
+  }
+  .navbar.affix{
+    top: 50px;
+    z-index: 50;
+    width: 100%;
+  }
+  .quienesSomos {
+    background: url(../img/bg-data.png) no-repeat center center;
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+    background-size: cover !important;
+  }
+  .beneficios {
+    padding: 1.5em;
+  }
+  .centerMobile {
+    text-align: center;
+  }
+  .contacto-sugar {
+        height: 230%;
+        height: 230vh;
+        background: url(../img/haz-contacto-mobile.jpg) no-repeat center bottom;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    .header-content h1 {
+    font-size: 2.8em;
+    letter-spacing: .2em;
+    margin-bottom: -1px;
+  }
+  .quienesSomosTitle .span1 {
+    margin-right: 0em;
+  }
+
+  .contacto-sugar h1{
+  font-size: 3em;
+}
+
+}
+
+@media (max-width: 767px) {
+  .alinearMobile {
+    text-align: center !important;
+  }
+  .border-right {
+    border: none;
+  }
+  .contacto-sugar {
+      height: 300%;
+      height: 300vh;
+      background: url(../img/haz-contacto-mobile.jpg) no-repeat center bottom;
+      -webkit-background-size: contain;
+      -moz-background-size: contain;
+      -o-background-size: contain;
+      background-size: contain;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 1224px) {
+  .soluciones h1{
+    font-family: 'ProximaNova-Extrabld';
+    font-weight: 300;
+    font-style: normal;
+    font-size: 3em;
+  }
+}
+
+/* Smartphone */
+@media (min-width: 380px) and (max-width: 766px) {
+	.navbar.affix{top:50px; }
+	.quees{padding:50px 30px 0px 30px;}
+	.beneficios{padding: 80px 50px 0px 50px;}
+
+	.bloque{
+	padding:30px;
+	height: 300px;
+	margin-bottom:20px;}
+
+.bloque{
+  -moz-transform: skewY(2deg);
+  -webkit-transform: skewY(2deg);
+  -o-transform: skewY(2deg);
+  -ms-transform: skewY(2deg);
+  transform: skewY(2deg);
+  }
+
+.bloque .bloque-content{
+-moz-transform: skewY(-2deg);
+-webkit-transform: skewY(-2deg);
+-o-transform: skewY(-2deg);
+-ms-transform: skewY(-2deg);
+transform: skewY(-2deg);
+display:inline-block;
+
+}
+
+
+   /*Header*/
+  .header {padding-top: 5rem !important;}
+  .header-content{padding:30px 30px 50px; }
+
+  .header-content h4{
+    font-size:1.2em;
+    letter-spacing:.3em;
+    font-weight: 800;
+    margin-bottom:-20px;
+  }
+ 
+  .header-content h1{
+    font-size:2.6em;
+    letter-spacing: .2em;
+    margin-bottom: 2px;
+  }
+
+  .header-content .block{
+    font-size:0.8em;
+    letter-spacing:1em;
+    padding:5px 5px 5px 20px;
+  }
+  
+  .row {margin: 0 !important;}
+}

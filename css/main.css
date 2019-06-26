@@ -1,0 +1,792 @@
+@import url("sugarcrm.css");
+
+/* Boilerplate */
+/* Boilerplate */
+/* Boilerplate */
+/* Boilerplate */
+/* Boilerplate */
+body {
+    font-family: 'ProximaNova-Light';
+    font-weight: 300;
+    font-style: normal;
+    color: #fff;
+    background-color: #000;
+}
+.noPadding {
+    padding: 0;
+}
+/* Colors */
+.colores {
+    background: #56bee1; /* azul */
+    background: #000; /* negro */
+    background: #c11e50; /* rojo */
+}
+.txtBlue {
+    color: #56bee1 !important;
+}
+.txtBold {
+    font-family: 'ProximaNova-Extrabld';
+    font-weight: 800;
+    font-style: normal;
+}
+h1, h2, h3 {
+    font-family: 'ProximaNova-Extrabld';
+    font-weight: 800;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+/* navBar */
+.navLine {
+    position: absolute;
+    right: 0;
+    top: 50px;
+}
+.esMobile {
+    width: 0px;
+    opacity: 0;
+}
+.iconos-redes a {
+    padding: 8px 6px !important;
+    margin-top: 0.5em;
+}
+.iconos-redes img {
+    width: 1.8em;
+
+}
+.iconos-redes img:hover {
+    opacity: 0.8;
+}
+
+/* HOME *//* HOME *//* HOME *//* HOME */
+
+/* Hero */
+/* Hero */
+/* Hero */
+
+.hero {
+    height: 85%;
+    height: 85vh;
+    margin-top: 5em;
+    background: url(../img/hero.png) no-repeat bottom center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.heroTxt {
+    /* padding-top: 13em; */
+    padding-top: 25vh;
+}
+
+.hero h1 {
+    font-size: 2em;
+    margin: 0;
+    -moz-text-shadow: 2px 2px 0px rgba(0, 0, 0, 1);
+    -webkit-text-shadow: 2px 2px 0px rgba(0, 0, 0, 1);
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 1);
+}
+.hero h2 {
+    margin: 0.1em 0;
+    color: #56bee1;
+    font-size: 4em;
+    line-height: 0.85em;
+    -moz-text-shadow: 0.1em 0.1em 0px rgba(193, 30, 80, 0.4);
+    -webkit-text-shadow: 0.1em 0.1em 0px rgba(193, 30, 80, 0.4);
+    text-shadow: 0.1em 0.1em 0px rgba(193, 30, 80, 0.4);
+}
+.hero p {
+    -moz-text-shadow: 2px 2px 0px rgba(0, 0, 0, 1);
+    -webkit-text-shadow: 2px 2px 0px rgba(0, 0, 0, 1);
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 1);
+}
+
+
+/* Botón */
+.Btn {
+    display: inline-block;
+    position: relative;
+    background-color: #56bee1;
+    color: #000;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    font-family: 'ProximaNova-Extrabld';
+    font-weight: 800;
+    font-style: normal;
+    padding: 0.5em;
+    min-width: 8em;
+    text-align: center;
+    -moz-transform: skew(-14deg, 0deg);
+    -webkit-transform: skew(-14deg, 0deg);
+    -o-transform: skew(-14deg, 0deg);
+    -ms-transform: skew(-14deg, 0deg);
+    transform: skew(-14deg, 0deg);
+}
+
+.Btn span {
+    display: inline-block;
+    -moz-transform: skew(14deg, 0deg);
+    -webkit-transform: skew(14deg, 0deg);
+    -o-transform: skew(14deg, 0deg);
+    -ms-transform: skew(14deg, 0deg);
+    transform: skew(14deg, 0deg);
+    
+}
+.Btn::after {
+    content: ' ';
+    width: 100%;
+    height: 100%;
+    right: -0.5em;
+    bottom: -0.5em;
+    border: 1px solid #c11e50;
+    position: absolute;
+    z-index: -1;
+    transition: right 0.3s, bottom 0.3s, border 0.3s;
+}
+.Btn:hover:after {
+    right: -0em;
+    bottom: -0em;
+    border: 1px solid #56bee1;
+    color: #000
+}
+.Btn:hover, .Btn:focus {
+    text-decoration: none;
+}
+
+.separador {
+    width: 100%;
+    margin: 5em 0;
+}
+
+.linea {
+    width: 50%;
+}
+
+
+.brazo {
+    width: 100%;
+}
+
+/* Quienes Somos */
+.quienesSomosTitle {
+    text-align: center;
+    margin: 0 0 8em 0;
+}
+.quienesSomosTitle h1 {
+    line-height: 1em;
+    font-size: 3.2em;
+}
+.quienesSomosTitle .span1 {
+    margin-right: 2em;
+}
+.quienesSomosTitle .span2 {
+    background-color: #fff;
+    color: #000;
+    margin-left: 2em;
+    padding: 0.2em;
+    display: inline-block;
+    -moz-transform: skew(-14deg, 0deg);
+    -webkit-transform: skew(-14deg, 0deg);
+    -o-transform: skew(-14deg, 0deg);
+    -ms-transform: skew(-14deg, 0deg);
+    transform: skew(-14deg, 0deg);
+}
+.quienesSomosTitle .span2b {
+    display: inline-block;
+    -moz-transform: skew(14deg, 0deg);
+    -webkit-transform: skew(14deg, 0deg);
+    -o-transform: skew(14deg, 0deg);
+    -ms-transform: skew(14deg, 0deg);
+    transform: skew(14deg, 0deg);
+}
+.quienesSomos {
+    background: url(../img/bg-data.png) no-repeat center center; 
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+}
+
+.qsSlogan {
+    font-size: 1.4em;
+    margin-top: 2em;
+}
+
+.qsTxt h1 {
+    font-size: 1.6em;
+}
+
+
+
+/* Que Resolvemos */
+.QueResolvemos {
+    text-align: center;
+    background: url(../img/bg-data2.png) no-repeat top right;
+}
+
+.qrSpan {
+    position: relative;
+    color: #000;
+    text-shadow: 1px 1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
+-1px -1px 0 #fff, 1px 0px 0 #fff, 0px 1px 0 #fff,
+-1px 0px 0 #fff, 0px -1px 0 #fff;
+}
+.qrSpan::after {
+    content: ' ';
+    width: 100%;
+    height: 170%;
+    right: 0;
+    bottom: -30%;
+    border: 1px solid #c11e50;
+    position: absolute;
+    -moz-transform: skew(-14deg, 0deg);
+    -webkit-transform: skew(-14deg, 0deg);
+    -o-transform: skew(-14deg, 0deg);
+    -ms-transform: skew(-14deg, 0deg);
+    transform: skew(-14deg, 0deg);
+}
+
+.QueResolvemosTxt h1 {
+    margin: 0.1em 0;
+    color: #56bee1;
+    font-size: 4em;
+    line-height: 0.85em;
+    -moz-text-shadow: 0.1em 0.1em 0px rgba(193, 30, 80, 0.4);
+    -webkit-text-shadow: 0.1em 0.1em 0px rgba(193, 30, 80, 0.4);
+    text-shadow: 0.1em 0.1em 0px rgba(193, 30, 80, 0.4);
+}
+
+.QueResolvemosTxt1 {
+    text-align: right;
+}
+.QueResolvemosTxt2 {
+    text-align: left;
+}
+
+.QueResolvemosTxt1 .copy {
+    margin-top: 10em; 
+}
+.QueResolvemosTxt2 .copy {
+    margin-top: 10em;
+}
+
+/* Funnel */
+.funnelTitle h1 {
+    font-size: 3.4em;
+    line-height: 1.25em;
+    padding-top: 2em;
+}
+.funnelSpan1 {
+    color: #000;
+    background: #fff;
+    padding: 0.12em 0.25em;
+}
+.funnelSpan2 {
+    font-size: 1.1em;
+}
+
+/* Alianzas */
+.alianzasTxtDiv {
+    margin: 1.5em 0 6em 0;
+}
+.alianzasTxt {
+    padding: 1.5em;
+    padding-top: 2em;
+    text-align: center;
+    position: relative;
+}
+.alianzasTxt h1 {
+    display: inline-block;
+    width: auto;
+    font-size: 3.2em;
+    color: #000;
+    background-color: #fff;
+    padding: 0.15em 0.5em;
+    -moz-transform: skew(-14deg, 0deg);
+    -webkit-transform: skew(-14deg, 0deg);
+    -o-transform: skew(-14deg, 0deg);
+    -ms-transform: skew(-14deg, 0deg);
+    transform: skew(-14deg, 0deg);
+}
+.alianzasTxt span {
+    display: inline-block;
+    -moz-transform: skew(14deg, 0deg);
+    -webkit-transform: skew(14deg, 0deg);
+    -o-transform: skew(14deg, 0deg);
+    -ms-transform: skew(14deg, 0deg);
+    transform: skew(14deg, 0deg);
+}
+.alianzasTxt p {
+    border: 1px solid #fff;
+    padding: 3.2em 2.4em 2.4em 2.4em;
+    margin-top: -2.8em;
+}
+
+.alianzasLogos {
+    padding: 5em 0;
+    background: url(../img/bg-data3.png) no-repeat center center; 
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+}
+
+/* Alianzas 2 */
+
+.alianzas2Txt {
+    margin-top: 7em;    
+}
+.alianzas2Txt img {
+    margin: 3em 0;
+}
+
+.alianzas2 h1 {
+    font-size: 3em;
+    margin: 0;
+    padding: 0;
+}
+.alianzas2 h2 {
+    font-family: 'ProximaNova-Light';
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.8em;
+    margin-top: 0;
+}
+
+/* Moving Target */
+.movingTarget {
+    padding: 3em 0;
+}
+
+/* Clientes */
+.clientesTxt h1 {
+    background-color: #56bee1;
+    color: #000;
+}
+
+.clientesLogos {
+    padding-bottom: 6em;
+}
+
+.mb-0 {
+    margin-bottom:0;
+}
+.mb-1 {
+    margin-bottom: 1em;
+}
+.mb-2 {
+    margin-bottom: 2em;
+}
+
+/* Contacto */
+.contacto {
+    min-height: 90%;
+    min-height: 90vh;
+    padding-bottom: 3em;
+    background: url(../img/haz-contacto.jpg) no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.contacto h1 {
+    font-family: 'ProximaNova-Extrabld';
+    font-weight: 800;
+    font-style: normal;
+    font-size: 5.5em;
+    text-align: center;
+}
+
+.contacto p {
+    text-align: center;
+    font-size: 1.4em;
+    margin-bottom: 2em;
+}
+
+.contacto .contacto-sugar p {
+    text-align:left;
+    font-size: 1.1em;
+    margin-bottom: 2em;
+}
+
+input, textarea {
+    border: 1px solid #56bee1;
+    background-color: #000;
+    padding: 0.7em;
+    width: 100%;
+    margin-bottom: 1.5em;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -o-border-radius: 6px;
+    border-radius: 6px;
+}
+
+textarea {
+    resize: none;
+    height: 10em;
+}
+.form label {
+    text-transform: uppercase;
+    font-size: 0.8em;
+}
+
+/* footer */
+
+.footer {
+    padding: 1em !important;
+}
+
+.footerList {
+list-style: none;
+}
+.footerList li {
+    display: inline-block;
+    padding-right: 1em;
+}
+.footerList img {
+    width: 2.5em;
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+.footerList img:hover {
+    opacity: 0.8;
+}
+
+.footerLogo {
+    text-align: right;
+}
+.footerLogo img {
+    max-width: 10em;
+}
+.footerPad {
+    padding-top: 6px;
+}
+
+
+
+
+.funnelimg-layers {
+    /* overflow-x: hidden; */
+}
+.funnelimg-layers img{
+    width: 100%;
+}
+
+.orbits{position: absolute; z-index: 100; top:0; left:0;}
+.planet{position: relative;}
+
+.modal {
+    color: #000;
+}
+.modalLink {
+    color: #fff;
+    text-decoration: underline;
+}
+.modalLink:hover, .modalLink:visited  {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.contactoh2 {
+    font-size: 1.2em;
+    margin-top: 3em;
+}
+
+.descargaPPT {
+    margin-bottom: 6em;
+}
+
+.contactoP {
+    font-size: 0.8em !important;
+    margin-top: 1.3em;
+}
+
+
+/* Sección: Marketing Trail */
+.heroMktTrail {
+    height: 85%;
+    height: 85vh;
+    margin-top: 5em;
+    background: url(../img/hero-marketingtrail.jpg) no-repeat bottom right; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.TrailItem {
+    background-color: #333333;
+    padding: 1em;
+    margin-bottom: 1em;
+    min-height: 18em;
+    text-align: right;
+}
+.TrailItemBig {
+    background-color: #333333;
+    padding: 1em;
+    min-height: 37em;
+    text-align: right;
+}
+
+
+.TrailItem h1 {
+    font-family: 'ProximaNova-Extrabld';
+    font-weight: 800;
+    font-style: normal;
+    font-size: 2em;
+    margin-bottom: 0;
+}
+.TrailItem h2 {
+    font-family: 'ProximaNova-Light';
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.3em;
+    margin-top: 0;;
+}
+
+
+.btnArrow {
+    color: #c11e50;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    font-size: 4em;
+    font-family: 'ProximaNova-Extrabld';
+    font-weight: 800;
+    font-style: normal;
+    height: 0.94em;
+    width: 1em;
+    line-height: 1em;
+    border: 1px solid #fff;
+    transition: background-color 0.23s, color 0.23s;
+}
+.btnArrow:hover {
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #fff;
+    background-color: #c11e50;
+}
+.btnArrow:focus, .btnArrow:visited {
+    color: #c11e50;
+    text-decoration: none;
+    border: 1px solid #fff;
+    background-color: #fff;
+}
+
+.selectorMktTrail {
+    padding: 25vh 0;
+}
+
+
+/* media queries */
+/* media queries */
+/* media queries */
+
+/* Tablet */
+@media all and (max-width: 767px) {
+    .esMobile {
+        width: 100px;
+    }
+    .footer {
+        text-align: center !important;
+    }
+    .footerLogo {
+        text-align: center;
+    }
+    .hero {
+        margin-top: 3.2em;
+    }
+    .contacto h1 {
+        font-size: 2em;
+    }
+    .contacto {
+        height: 80%;
+        height: 80vh;
+        background: url(../img/haz-contacto-mobile.jpg) no-repeat center bottom !important;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+}
+
+/* Only tablet */
+@media all and (min-width:768px) and (max-width: 1003px) {
+    .navbar-brand>img {
+        max-width: 7em !important;
+    }
+    .navbar-default .navbar-nav > li > a {
+        font-size: 13px !important;
+    }
+    .nav>li>a {
+        padding: 19px 16px;
+    }
+    .contacto {
+        height: 80%;
+        height: 80vh;
+        background: url(../img/haz-contacto.jpg) no-repeat left bottom !important;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+}
+
+@media all and (min-width:768px) and (max-width: 917px) {
+    .navbar-brand>img {
+        max-width: 7em !important;
+    }
+    .navbar-default .navbar-nav > li > a {
+        font-size: 12px !important;
+    }
+    .navbar-default .nav>li>a {
+        padding: 19px 10px !important;
+    }
+}
+
+/* Smartphone */
+@media all and (max-width: 480px) {
+    .heroTxt {
+        /* padding-top: 13em; */
+        padding-top: 2vh;
+        text-align: center;
+    }
+    .heroTxt p {
+        line-height: 1.23em;
+    }
+    .hero h2 {
+        font-size: 2.8em;
+    }
+    .hero h1 {
+        font-size: 1.4em;
+        margin: 0;
+    }
+    .quienesSomosTitle h1 {
+        line-height: 1em;
+        font-size: 2.6em;
+    }
+    .funnelTitle h1 {
+        font-size: 2.4em;
+        line-height: 1.2em;
+    }
+    .funnelSpan2 {
+        font-size: 0.8em;
+    }
+    .alianzasTxt h1 {
+        display: inline-block;
+        width: auto;
+        font-size: 2.2em;
+        padding: 0.15em 0.5em;
+    }
+    .hero {
+        height: 85%;
+        height: 85vh;
+        margin-top: 5em;
+        background: url(../img/hero-mobile.png) no-repeat bottom center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    .quienesSomosTitle {
+        text-align: center;
+        margin: 0 0 1em 0;
+    }
+    .QueResolvemosTxt1 .copy {
+        margin-top: 4em;
+    }
+    .QueResolvemosTxt2 .copy {
+        margin-top: 3em;
+    }
+    .alianzasLogos {
+        padding: 0;
+    }
+    .alianzasTxtDiv {
+        margin: 1em 0 2em 0;
+    }
+    .separador {
+        width: 100%;
+        margin: 2.5em 0;
+    }
+    .mb-2 {
+        -moz-transform: scale(0.8);
+        -webkit-transform: scale(0.8);
+        transform: scale(0.8);
+    }
+    .contacto {
+        height: 150%;
+        height: 150vh;
+        background: url(../img/haz-contacto-mobile.jpg) no-repeat center bottom !important;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+}
+
+/* Only desktop */
+@media all and (min-width: 768px) {
+    .qsLogo {
+        transform: translateX(1.3em);
+    }
+}
+
+@media all and (min-width:768px) and (max-width: 991px) {
+    .specialContainer {
+        width: 100%;
+    }
+    .isotipo-mobile {
+        margin-top: 5em;
+    }
+}
+
+@media (max-width: 750px) {
+  .isotipo-mobile{
+    width: 60%;
+    margin: 0 auto;
+  }
+} 
+
+@media (max-width: 420px) {
+  .isotipo-mobile{
+    width: 60%;
+    margin: 0 auto;
+  }
+} 
+
+/* Cambios */
+.form {
+    text-align: left;
+}
+
+.btnSelect {
+    display: block;
+    width: 100%;
+    height: 3em;
+    line-height: 3em;
+    margin: 1em 0;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    background-color: #000;
+}
+.btnSelect:hover, .btnSelect:focus {
+    text-decoration: none;
+    color: #999;
+}
+.btnSelectActive {
+    background-color: #c11e50;
+}
+.Thanks {
+    background-color: #000;
+    border: 1px solid #c11e50;
+    padding: 0.5em;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -o-border-radius: 6px;
+    border-radius: 6px;
+}

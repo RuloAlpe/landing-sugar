@@ -1,0 +1,12 @@
+    /* Some custom styles to beautify this example */
+    .jumbotron{
+        margin-bottom: 0;
+    }
+    .navbar{
+        border-radius: 0;
+    }
+    .navbar.affix{
+        top: 0px; /* Set the top position of pinned element */
+        z-index: 9999;
+        width: 100%;
+    }
