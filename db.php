@@ -2,7 +2,7 @@
 $server = 'localhost';
 $username = 'root';
 $password = 'root';
-$database = 'credito_pyme_db';
+$database = 'landing_estrategica';
 
 
 $conn = new mysqli($server, $username, $password, $database);

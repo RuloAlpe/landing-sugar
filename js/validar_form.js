@@ -4,12 +4,12 @@ $(document).ready(function(){
     $('.obligatorio_nombre').css('display', 'none');
   });
 
-  $('#apellido_p').keypress(function(e){
-    $('.obligatorio_apellido_p').css('display', 'none');
+  $('#cargo').keypress(function(e){
+    $('.obligatorio_cargo').css('display', 'none');
   });
 
-  $('#apellido_m').keypress(function(e){
-    $('.obligatorio_apellido_m').css('display', 'none');
+  $('#mensaje').keypress(function(e){
+    $('.obligatorio_mensaje').css('display', 'none');
   });
 
   //numeros enteros
@@ -33,16 +33,6 @@ $(document).ready(function(){
   $('#empresa').keypress(function(e){
     $('.obligatorio_empresa').css('display', 'none');
   });
-  
-  $('#regimen_fiscal').on('change', function(e){
-
-    $('.obligatorio_regimen_fiscal').css('display', 'none');
-  });
-
-  $('#ventas_mensuales').on('change', function(e){
-
-    $('.obligatorio_ventas_mensuales').css('display', 'none');
-  });
 
   $("#box-2").on('change', function(){
     $('.obligatorio_privacidad').css('display', 'none');
@@ -54,7 +44,46 @@ $(document).ready(function(){
     l.start();
 
     if(validarForm()){
-      $('#contactForm1').submit();
+      // $('#contactForm1').submit();
+      var data = $('#contactForm1').serialize();
+      $.ajax({
+        url: 'guardarDatos.php',
+        method: 'POST',
+        data: data,
+        success: function(resp){
+          resp = JSON.parse(resp);
+
+          if(resp.status == "success"){
+            $(".Thanks").css('display', 'block');
+
+            var inter = setInterval(() => {
+              $(".Thanks").css('display', 'none');
+              $('#contactForm1').trigger('reset');
+              clearInterval(inter);
+            }, 5000);
+          }else{
+            $(".Thanks").text('Ocurrio un error, intentalo mas tarde');
+            $(".Thanks").css('display', 'block');
+
+            var inter1 = setInterval(() => {
+              $(".Thanks").css('display', 'none');
+              clearInterval(inter1);
+            }, 5000);
+          }
+          l.stop();
+        },
+        error: function(){
+          $(".Thanks").text('Ocurrio un error, intentalo mas tarde');
+          $(".Thanks").css('display', 'block');
+
+          var inter2 = setInterval(() => {
+            $(".Thanks").css('display', 'none');
+            clearInterval(inter2);
+          }, 5000);
+          l.stop();
+        }
+      });
+
     }else{
       l.stop();
       console.log("Form no validado");
@@ -63,14 +92,12 @@ $(document).ready(function(){
 });
 
 function validarForm(){
+  var empresa = $('#empresa').val();
   var nombre = $('#nombre').val();
-  var apellido_p = $('#apellido_p').val();
-  var apellido_m = $('#apellido_m').val();
+  var cargo = $('#cargo').val();
   var telefono = $('#telefono').val();
   var email = $('#email').val();
-  var empresa = $('#empresa').val();
-  var regimen_fiscal = $("#regimen_fiscal").val();
-  var ventas_mensuales = $("#ventas_mensuales").val();
+  var mensaje = $('#mensaje').val();
 
   var val = true;
 
@@ -79,13 +106,13 @@ function validarForm(){
     val = false;
   }
 
-  if(apellido_p.length < 1){
-    $('.obligatorio_apellido_p').css('display', 'block');
+  if(cargo.length < 1){
+    $('.obligatorio_cargo').css('display', 'block');
     val = false;
   }
 
-  if(apellido_m.length < 1){
-    $('.obligatorio_apellido_m').css('display', 'block');
+  if(mensaje.length < 1){
+    $('.obligatorio_mensaje').css('display', 'block');
     val = false;
   }
 
@@ -99,7 +126,7 @@ function validarForm(){
     val = false;
   }else{
     if(!validateEmail(email)){
-      $('.obligatorio_email').text('Email no valido');
+      $('.obligatorio_email').text('*Email no valido');
       $('.obligatorio_email').css('display', 'block');
       val = false;
     }
@@ -107,16 +134,6 @@ function validarForm(){
 
   if(empresa.length < 1){
     $('.obligatorio_empresa').css('display', 'block');
-    val = false;
-  }
-
-  if(regimen_fiscal == '0'){
-    $('.obligatorio_regimen_fiscal').css('display', 'block');
-    val = false;
-  }
-
-  if(ventas_mensuales == '0'){
-    $('.obligatorio_ventas_mensuales').css('display', 'block');
     val = false;
   }
 
