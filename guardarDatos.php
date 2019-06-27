@@ -27,36 +27,36 @@ if(isset($_POST)){
 
       // file_get_contents('./mktrailMails/mktrail_thankyou/index.html');
 
-      $cabeceras = 'From: contacto@estrategica.com' . "\r\n";
-      $cabeceras .= 'Content-type: text/html; charset=utf-8' . "\r\n";
+      // $cabeceras = 'From: contacto@estrategica.com' . "\r\n";
+      // $cabeceras .= 'Content-type: text/html; charset=utf-8' . "\r\n";
 
-      // send email
-      mail('ralanis@estrategica.com', "Registro en landing page de sugar", $mensaje, $cabeceras);
+      // // send email
+      // mail('ralanis@estrategica.com', "Registro en landing page de sugar", $mensaje, $cabeceras);
 
-      // $mail_p = new PHPMailer();
-      // $mail_p->IsSMTP();
-      // $mail_p->SMTPAuth   = true;
-      // $mail_p->SMTPSecure = "tls"; 
-      // $mail_p->Host       = "smtp.mandrillapp.com";
-      // $mail_p->Port       = 587; 
-      // $mail_p->Username   = "aquintana@estrategica.com";
-      // $mail_p->Password   = "9C6kelU75JH5kwhS_BUFFQ";
-      // $mail_p->From       = "contacto@estrategica.com";
-      // $mail_p->FromName   = "Registro sugar";
-      // $mail_p->Subject    = "Registro sugar";
-      // $mail_p->AltBody    = "Contacto";
-      // // $mail_p->AddReplyTo();
-      // // $mail_p->WordWrap   = 50;
+      $mail_p = new PHPMailer();
+      $mail_p->IsSMTP();
+      $mail_p->SMTPAuth   = true;
+      $mail_p->SMTPSecure = "tls"; 
+      $mail_p->Host       = "smtp.sendgrid.net";
+      $mail_p->Port       = 587; 
+      $mail_p->Username   = "gafetesabc";
+      $mail_p->Password   = "g4f3T3s2019";
+      $mail_p->From       = "contacto@estrategica.com";
+      $mail_p->FromName   = "Registro sugar";
+      $mail_p->Subject    = "Registro sugar";
+      $mail_p->AltBody    = "Contacto";
+      // $mail_p->AddReplyTo();
+      // $mail_p->WordWrap   = 50;
 
-      // $mail_p->AddAddress("ralanis@estrategica.com");
-      // $mail_p->IsHTML(true);
-      // $mail_p->CharSet = 'UTF-8';
-      // $mail_p->Body = $mensaje;
+      $mail_p->AddAddress("ralanis@estrategica.com");
+      $mail_p->IsHTML(true);
+      $mail_p->CharSet = 'UTF-8';
+      $mail_p->Body = $mensaje;
 
-      // if(!$mail_p->Send()) {
-      //   // echo "Error " . $mail_p->ErrorInfo;exit;
-      //   echo json_encode(['status' => 'error1 ' . $mail_p->ErrorInfo]);exit;
-      // }
+      if(!$mail_p->Send()) {
+        // echo "Error " . $mail_p->ErrorInfo;exit;
+        echo json_encode(['status' => 'error1 ' . $mail_p->ErrorInfo]);exit;
+      }
 
       echo json_encode(['status' => 'success']);
 
