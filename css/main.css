@@ -790,3 +790,7 @@ list-style: none;
     -o-border-radius: 6px;
     border-radius: 6px;
 }
+
+.puntero{
+    cursor: pointer;
+}
