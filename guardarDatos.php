@@ -11,7 +11,8 @@ if(isset($_POST)){
   try{  
     $stmt = $conn->prepare("insert into contactos_sugar (txt_empresa, txt_nombre, txt_cargo, txt_telefono, txt_email, txt_mensaje) values (?, ?, ?, ?, ?, ?)");
 
-    $stmt->bind_param("ssssss", $_POST['empresa'], $_POST['nombre'], $_POST['cargo'], $_POST['telefono'], $_POST['email'], $_POST['mensaje']);
+    $nombre = $_POST['nombre'] . " " . $_POST['apellidos'];
+    $stmt->bind_param("ssssss", $_POST['empresa'], $nombre, $_POST['cargo'], $_POST['telefono'], $_POST['email'], $_POST['mensaje']);
     
     /* ejecutar la consulta */
     $stmt->execute();
@@ -19,7 +20,7 @@ if(isset($_POST)){
 
       $mensaje = "<h1>Registro en landing page de sugar</h1>
       <p>Empresa: ".$_POST['empresa']."</p>
-      <p>Nombre: ".$_POST['nombre']."</p>
+      <p>Nombre: ".$_POST['nombre'] . " " . $_POST['apellidos']."</p>
       <p>Cargo: ".$_POST['cargo']."</p>
       <p>Telefono: ".$_POST['telefono']."</p>
       <p>Email: ".$_POST['email']."</p>

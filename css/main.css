@@ -794,3 +794,8 @@ list-style: none;
 .puntero{
     cursor: pointer;
 }
+
+.contrasteForm{
+    background-color: rgb(55, 0, 0, 0.7);
+    padding: 10px;
+}

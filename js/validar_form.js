@@ -4,6 +4,10 @@ $(document).ready(function(){
     $('.obligatorio_nombre').css('display', 'none');
   });
 
+  $('#apellidos').keypress(function(e){
+    $('.obligatorio_apellidos').css('display', 'none');
+  });
+
   $('#cargo').keypress(function(e){
     $('.obligatorio_cargo').css('display', 'none');
   });
@@ -94,6 +98,7 @@ $(document).ready(function(){
 function validarForm(){
   var empresa = $('#empresa').val();
   var nombre = $('#nombre').val();
+  var apellidos = $('#apellidos').val();
   var cargo = $('#cargo').val();
   var telefono = $('#telefono').val();
   var email = $('#email').val();
@@ -103,6 +108,11 @@ function validarForm(){
 
   if(nombre.length < 1){
     $('.obligatorio_nombre').css('display', 'block');
+    val = false;
+  }
+
+  if(apellidos.length < 1){
+    $('.obligatorio_apellidos').css('display', 'block');
     val = false;
   }
 
